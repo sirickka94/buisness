@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato";
+}
+
+a {
+    color: #868686;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px 0;
+}
+
+a:hover {
+    color: #efe05f;
+    transition: color .3s linear;
+}
+
+.underline{
+    position: relative;
+}
+.underline:before {
+    content: "";
+    background: #efe05f;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+.underline:after {
+    content: "";
+    background: #efe05f;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+.underline:hover:before,
+.underline:hover:after{
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li.line-list {
+    display: inline-block;
+    padding: 0 20px;
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu {
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider {
+    background: #709dca;
+}
+
+.title {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.small-title{
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+form {
+    margin: 13px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+input {
+    height: 46px;
+    margin: 0 5px;
+    padding: 0 43px;
+    border: 0;
+    border-radius: 4px;
+    font-family: "Open Sans";
+}
+input[type=submit]{
+    background: #ffbb42;
+    color: white;
+    text-transform: uppercase;
+}
+.user{
+    /*background: url(../images/user.svg) no-repeat 10px white;*/
+    /*background-size: 20px 20px;*/
+}
+label[for=fullname] {
+    position: absolute;
+    background: url(../images/user.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 23;
+    left: 15px;
+    opacity: 0.4;
+}
